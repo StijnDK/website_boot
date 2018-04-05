@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* CSS Document */
+/* This is the stylesheet for the main website. It configures the responsive grid as well as the styling of the text*/
+
+
+@media (min-width : 400px ){
+}
+
+/* for the MEDS Gent font */
+@font-face { font-family: 'MEDS';
+	src: url('../fonts/MedsGentTitles-Regular.ttf') format('truetype');
+}
+
+/* for the Alte DIN regular font */
+@font-face { font-family: 'Alte DIN';
+	src: url('../fonts/din1451alt.ttf') format('truetype');
+}
+
+/* for the Alte DIN condensed font */
+@font-face { font-family: 'Alte DIN Condensed';
+	src: url('../fonts/din1451alt G.ttf') format('truetype');
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#fill {
+	min-height: 100%;
+	height: 100%;
+	color: rgba(0,0,120,1.00);
+	background: red;
+	display: block;
+}
+
+.middle {
+	border-right: 2px dashed rgba(0,0,120,1.00);
+	color: rgba(0,0,120,1.00);
+}
+
+h1 {
+	font-family: "MEDS", "Alte DIN";
+	font-size: 36px;
+}
+
+h2 {
+	font-family: "Alte DIN", "Gill Sans", Helvetica;
+	font-size: 20px;
+	color: rgba(0,0,120,1.0);
+}
+
+h3 {
+	font-family: "Alte DIN", "Gill Sans", Helvetica;
+	font-size: 15px;
+	color: rgba(0,0,120,1.0);
+}
+
+
+p {
+	font-family: "Lucida Bright", "DejaVu Serif", "serif", Georgia;
+	font-size: 12px;
+	color: rgba(0,0,120,1.00);
+	text-align: center;
+}
+
+#borderimg {
+    border-right: 10px solid transparent;
+	border-left: 0px;
+    padding: 10px;
+    -webkit-border-image: url(../images/borderSLASHHH.png) 50 round; 
+    -o-border-image: url(../images/borderSLASHHH.png) 50 round;
+    border-image: url(../images/borderSLASHHH.png) 50 round;
+}
+
+
+ul.mainmenu {
+	list-style: none;
+    margin: 20px;
+    padding: 0;
+	font-size: 12px;
+}
+
+ul.mainmenu li:before {
+    content: ">";
+	color: rgba(0,0,120,1.00);
+	float: left;
+	padding-right: 6px;
+	margin-top: 3px;
+}
+
+ul.submenu {
+	list-style: none;
+    margin-left: 15px;
+    padding: 0;
+}
+
+ul.submenu li:before {
+    content: ">>";
+	color: rgba(0,0,120,1.00);
+	float: left;
+	padding-right: 6px;
+	margin-top: 0px;
+}
+
+ul li:hover:before{
+	color: rgba(16,181,232,1.00);
+}
+ul li:active:before{
+	color: rgba(16,181,232,1.00);
+}
+
+a:hover {
+	color: rgba(0,0,120,1.00);
+}
+a:active {
+	color: rgba(16,181,232,1.00);
+}
+
+a {
+	text-decoration: none;
+	padding: 0px;
+}
+footer {
+	margin-top: 10%;	
+}
+
